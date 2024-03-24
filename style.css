@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #222;
+
+}
+.d{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+#png{
+    width: 120px;
+}
+.png{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.display{
+    display: flex;
+}
+.png.display{
+    display: flex;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 100%;
+    max-width: 350px;
+    height: 82vh;
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+color: white;
+border-radius: 20px;
+margin:auto;
+padding: 40px 40px;
+text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ddfaf6;
+    color: #5b5858; 
+    padding: 10px 25px;
+    height: 50px;
+    border-radius:30px;
+    margin-right: 5px;
+    font-size: 15px;
+    
+}
+.search button{
+    outline: 0;
+    border: 0;
+    height: 50px;
+    width: 50px;
+    background: #ddfaf6;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search button img{
+    width: 50px;
+
+}
+.weather-icon{
+width: 200px;
+margin-top: 20px;
+}
+.col img{
+    width: 100px;
+    margin-right: 10px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.col img{
+    width: 60px;
+    margin-right: 5px;
+}
+.weather h1{
+    font-size: 40px;
+    font-weight: 500;
+} 
+.weather h2{
+    font-size: 25px;
+    font-weight: 250;
+}
+.humidity, .wind{
+    font-size: 18px;
+    font-weight: 200;
+}
+.detail span{
+    font-size: 12px;
+    font-weight: 300;
+}
+.weather-container{
+    display: none;
+
+}
+.weather-container.display{
+    display: flex;
+    
+}
+
+
+
+
+          /* API */
+
+/* https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} */
+
+    /* API KEY */
+    /* 7b398946453faf4e54f4488102a9ffca */
